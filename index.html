@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | Владислав</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<!-- Переключатель темы -->
+<div class="theme-switcher">
+    <i class="fas fa-moon"></i>
+</div>
+
+<!-- Главная секция -->
+<section id="home" class="home-section">
+    <div class="container">
+        <h1 class="fade-in">Привет! Я Влад</h1>
+        <p class="fade-in">Начинающий веб-разработчик, увлеченный созданием функциональных и привлекательных сайтов.</p>
+        <a href="#about" class="btn pulse fade-in">Узнать больше</a>
+    </div>
+</section>
+
+<!-- О себе -->
+<section id="about" class="about-section">
+    <div class="container">
+        <h2 class="slide-in">О себе</h2>
+        <div class="skills-grid fade-in">
+            <div class="skill-card">
+                <div class="tech-icon">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js-square"></i>
+                </div>
+                <h3>Frontend</h3>
+                <div class="tech-list">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="tech-icon">
+                    <i class="fab fa-node"></i>
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>Backend</h3>
+                <div class="tech-list">
+                    <span>Node.js</span>
+                    <span>MongoDB</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Навыки -->
+<section id="skills" class="skills-section">
+    <div class="container">
+        <h2 class="slide-in">Мои навыки</h2>
+        <div class="skills-grid fade-in">
+            <div class="skill">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fab fa-js-square"></i>
+                <span>JavaScript</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Портфолио -->
+<section id="portfolio" class="portfolio-section">
+    <div class="container">
+        <h2 class="slide-in">Мои проекты</h2>
+        <div class="projects fade-in">
+            <!-- Проекты будут добавляться динамически через JS -->
+        </div>
+    </div>
+</section>
+
+<!-- Контакты -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2 class="slide-in">Свяжитесь со мной</h2>
+
+        <!-- Форма обратной связи -->
+        <form id="contactForm" class="contact-form fade-in" action="https://formspree.io/f/xvgzrldq" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Ваш email" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+            </div>
+            <button type="submit" class="btn">
+                <span class="btn-text">Отправить</span>
+                <div class="loader"></div>
+            </button>
+        </form>
+
+        <!-- Уведомления -->
+        <div id="alert" class="alert"></div>
+
+        <!-- Соцсети -->
+        <div class="social-links fade-in">
+            <a href="mailto:vgorev101@gmail.com" class="social-link">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://t.me/I_v_shoke_druzya" class="social-link">
+                <i class="fab fa-telegram"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
