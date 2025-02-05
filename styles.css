@@ -138,6 +138,10 @@ body {
     background: var(--card-bg);
     border-radius: 10px;
     box-shadow: var(--shadow);
+    line-height: 1.4; /* Уменьшаем расстояние между строками */
+}
+.frame p {
+    margin: 0.5em 0; /* Уменьшаем отступы между абзацами */
 }
 
 /* Секция "О себе" */
