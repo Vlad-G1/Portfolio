@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | Владислав</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<!-- Переключатель темы -->
+<div class="theme-switcher" role="button" aria-label="Переключить тему">
+    <i class="fas fa-moon"></i>
+</div>
+
+<!-- Главная секция -->
+<section id="home" class="home-section">
+    <div class="container">
+        <h1 class="fade-in">Привет! Я Влад, и я создаю будущее веба</h1>
+        <p class="fade-in">Начинающий веб-разработчик, увлеченный созданием функциональных и привлекательных сайтов.</p>
+        <div class="arrow-down pulse fade-in" onclick="toggleFrame('about-frame')">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="about-frame" class="frame">
+            <h3>Моя специализация:</h3>
+            <div class="highlight-block">
+                <p>🚀 Разработка адаптивных лендингов и многостраничных сайтов</p>
+                <p>🎨 Интеграция дизайнов из Figma в качественный код</p>
+                <p>⚡ Оптимизация сайта для быстрой загрузки и удобства пользователей</p>
+            </div>
+
+            <h3>Технический стек:</h3>
+            <div class="highlight-block">
+                <p>🔧 HTML5, CSS3 (Pixel Perfect верстка)</p>
+                <p>🔧 JavaScript (ES6+, анимации, работа с API)</p>
+                <p>🔧 Базовые знания React/Node.js</p>
+                <p>🔧 Опыт работы с GitHub/GitLab</p>
+            </div>
+
+            <h3>Мои принципы работы:</h3>
+            <div class="highlight-block">
+                <p>⏱ Строгое соблюдение дедлайнов</p>
+                <p>💬 Постоянная коммуникация с клиентом</p>
+                <p>🎯 Результат, превосходящий ожидания</p>
+            </div>
+
+            <div class="cta-block">
+                <p>📁 Примеры моих работ доступны в <a href="https://github.com/your-profile" target="_blank" class="portfolio-link">портфолио на GitHub</a></p>
+                <p>💌 Хотите эффектный сайт, который запомнится вашим клиентам? <br> Напишите мне прямо сейчас!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- О себе -->
+<section id="about" class="about-section">
+    <div class="container">
+        <h2 class="slide-in">О себе</h2>
+        <div class="skills-grid fade-in">
+            <div class="skill-card" onmouseover="showSkillInfo('frontend-info')" onmouseout="hideSkillInfo('frontend-info')">
+                <div class="tech-icon">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js-square"></i>
+                </div>
+                <h3>Frontend</h3>
+                <div class="tech-list">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                </div>
+                <div id="frontend-info" class="skill-info-frame">
+                    <p>Frontend — это клиентская часть веб-приложений. Я использую HTML, CSS и JavaScript для создания интерактивных интерфейсов.</p>
+                </div>
+            </div>
+            <div class="skill-card" onmouseover="showSkillInfo('backend-info')" onmouseout="hideSkillInfo('backend-info')">
+                <div class="tech-icon">
+                    <i class="fab fa-node"></i>
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>Backend</h3>
+                <div class="tech-list">
+                    <span>Node.js</span>
+                    <span>MongoDB</span>
+                </div>
+                <div id="backend-info" class="skill-info-frame">
+                    <p>Backend — это серверная часть. Я работаю с Node.js и MongoDB для создания мощных API и управления данными.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Навыки-->
+<section id="skills" class="skills-section">
+    <div class="container">
+        <h2 class="slide-in">Мои навыки</h2>
+        <div class="skills-grid fade-in">
+            <!-- HTML5 -->
+            <div class="skill-card" onmouseover="showSkillInfo('HTML-info')" onmouseout="hideSkillInfo('HTML-info')">
+                <div class="tech-icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <h3>HTML5</h3>
+                <div class="chart" data-percent="90"></div>
+                <div id="HTML-info" class="skill-info-frame">
+                    <p>HTML5 — это стандартный язык разметки для создания веб-страниц. Я использую его для структурирования контента.</p>
+                </div>
+            </div>
+
+            <!-- CSS3 -->
+            <div class="skill-card" onmouseover="showSkillInfo('CSS-info')" onmouseout="hideSkillInfo('CSS-info')">
+                <div class="tech-icon">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <h3>CSS3</h3>
+                <div class="chart" data-percent="85"></div>
+                <div id="CSS-info" class="skill-info-frame">
+                    <p>CSS3 — это язык стилей, который я использую для оформления и анимации веб-страниц.</p>
+                </div>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="skill-card" onmouseover="showSkillInfo('JS-info')" onmouseout="hideSkillInfo('JS-info')">
+                <div class="tech-icon">
+                    <i class="fab fa-js-square"></i>
+                </div>
+                <h3>JavaScript</h3>
+                <div class="chart" data-percent="80"></div>
+                <div id="JS-info" class="skill-info-frame">
+                    <p>JavaScript — это язык программирования, который я использую для создания интерактивных веб-приложений.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Портфолио -->
+<section id="portfolio" class="portfolio-section">
+    <div class="container">
+        <h2 class="slide-in">Мои проекты</h2>
+        <div class="projects fade-in"></div>
+    </div>
+</section>
+
+<!-- Контакты -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2 class="slide-in">Свяжитесь со мной</h2>
+        <form id="contactForm" class="contact-form fade-in" action="https://formspree.io/f/xvgzrldq" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Ваш email" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+            </div>
+            <button type="submit" class="btn">
+                <span class="btn-text">Отправить</span>
+                <div class="loader"></div>
+            </button>
+        </form>
+        <div id="alert" class="alert"></div>
+        <div class="social-links fade-in">
+            <a href="mailto:vgorev101@gmail.com" class="social-link">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <div class="telegram-link" onmouseover="showQRCode()" onmouseout="hideQRCode()">
+                <a href="https://t.me/l_v_shoke_druzya" class="social-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <div id="qr-code" class="qr-code-frame">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://t.me/l_v_shoke_druzya" alt="QR Code">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
